@@ -54,6 +54,9 @@ Clock tree inserted to balance clock skew across all sequential elements.
 ![Routing](routing_150mhz.png)
 Final routed layout showing signal and power/ground routing across metal layers.
 
+### 5. GDS
+![Gds](gds_150mhz.png)
+
 ---
 
 **Tools used:** OpenLane, Sky130 PDK, KLayout
