@@ -32,3 +32,29 @@
 - final_150mhz.gds — Final GDSII layout (150MHz run)
 - 1-synthesis.AREA_0.stat.rpt — Synthesis cell/area report
 - 3-initial_fp_die_area.rpt — Floorplan die area report
+
+
+## Physical Design Stage Visualizations
+
+The FIFO design was carried through the RTL-to-GDSII flow using OpenLane and the Sky130 PDK. Below are layout snapshots from each major stage, viewed in KLayout.
+
+### 1. Floorplan
+![Floorplan](floorplan_150mhz.png)
+Initial floorplan showing die area, core area, and standard cell rows.
+
+### 2. Placement
+![Placement](placement_150mhz.png)
+Standard cells placed within the defined rows after global and detailed placement.
+
+### 3. Clock Tree Synthesis (CTS)
+![CTS](cts_150mhz.png)
+Clock tree inserted to balance clock skew across all sequential elements.
+
+### 4. Routing
+![Routing](routing_150mhz.png)
+Final routed layout showing signal and power/ground routing across metal layers.
+
+---
+
+**Tools used:** OpenLane, Sky130 PDK, KLayout
+**Target frequency:** 150 MHz
